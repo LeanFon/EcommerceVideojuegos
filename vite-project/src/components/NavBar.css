@@ -1,0 +1,10 @@
+nav{
+    background-color: orange;
+    .navContent{
+        button{
+            background-color: rgb(219, 150, 21);
+            color: white;
+        }
+    }
+}
+
