@@ -1,6 +1,5 @@
-
+import { Link } from "react-router-dom"
 import "./NavBar.css"
-import BottonComponent from "./BottonComponent"
 import TitleComponent from "./TitleComponent"
 import CartWidget from "./CartWidget"
 export default function NavBar(){
@@ -9,9 +8,9 @@ export default function NavBar(){
         <nav className="rounded-2 p-5">
             <TitleComponent titulo={"¡Juegos Manía!"}/>
             <div className="navContent d-flex justify-content-around">
-                <BottonComponent nombre={"Ps4"}/>
-                <BottonComponent nombre={"NS"}/>
-                <BottonComponent nombre={"Xbox"}/>
+                <Link to={`/category/PS`}><button>Playstation</button></Link>
+                <Link to={`/category/NS`}><button>NintendoSwitch</button></Link>
+                <Link to={`/category/PC`}><button>Computadora</button></Link>
             </div>
             <CartWidget/>
         </nav> 
