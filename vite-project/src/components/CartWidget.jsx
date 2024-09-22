@@ -1,7 +1,14 @@
+import { useContext } from "react"
+import { CartContext } from "./CartContext"
+import { Link } from "react-router-dom"
+
 export default function CartWidget(){
+
+    const [cart] = useContext(CartContext)
+
     return(
         <>
-        <h2>🛒0</h2>
+        <Link to={`/cart/`} style={{ textDecoration: 'none' }}><h2>🛒{cart.length}</h2></Link>
         </>
     )
 }

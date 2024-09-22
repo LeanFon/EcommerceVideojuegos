@@ -1,24 +1,23 @@
-import { getGames, filterGame } from "../async-mock"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import GameCard from "./GameCard"
 import { useParams } from "react-router-dom"
+import { GameContext } from "./GameContext"
 export default function Gamelist(){
-
-    const [games, setGames] = useState([])
+    const [juegos, setJuegos] = useState([])
+    const[,,,filterGame] = useContext(GameContext)
+    const [,,,,getGames] = useContext(GameContext)
     const {category} = useParams()
-
     useEffect(()=>{
         if(category == "NS" || category == "PS" || category == "PC"){
-            setGames(filterGame(category))
+            setJuegos(filterGame(category))
         } else {
-            getGames.then(data => setGames(data))
+            getGames.then(data => setJuegos(data))
         }
     }, [category])
-
     return(
         <>
         <section className="d-flex flex-wrap">
-            {games.map(game => <GameCard juego={game}/>)}            
+            {juegos.map(ga => <GameCard juego={ga}/>)}            
         </section>
         </>
     )

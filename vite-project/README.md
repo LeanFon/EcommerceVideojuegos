@@ -1,8 +1,13 @@
-# React + Vite
+# Proyecto de Ecommerce .
+> # Pre-Entrega 3.
+>
+ El proyecto se trata de un ecommerce sobre videojuegos que utiliza **React** y también las siguientes herramientas para su correcto funcionamiento:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ + ## Bootstrap:
+ Libreria de **CSS** en su versión 5.3.3 utilizada para facilitar el estilado de los distintos componentes.
 
-Currently, two official plugins are available:
+ + ## React-Router-Dom:
+  Libreria de **React** en su versión 18.3.1 que permite crear rutas hacia los distintos componentes de la aplicación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ + ## Firebase:
+  Firebase, usado en su versión 10.13.2, es un servidor que permite a sus usuarios hostear contenido dinamico y estático para completar la funcionalidad de su aplicación. 
